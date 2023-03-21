@@ -32,7 +32,12 @@
                 <li><a class="dropdown-item" href="#!">Settings</a></li>
                 <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#!">Logout</a></li>
+                <li>
+                    <a href="" class="dropdown-item text-danger" onclick="event.preventDefault(); document.getElementById('logoutForm').submit()">Logout</a>
+                    <form action="{{route('logout')}}" method="POST" id="logoutForm">
+                        @csrf
+                    </form>
+                </li>
             </ul>
         </li>
     </ul>
