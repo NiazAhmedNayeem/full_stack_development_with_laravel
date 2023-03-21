@@ -13,8 +13,9 @@
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Admin</h3></div>
+                                <h3 class="text-center text-success">{{Session::get('message')}}</h3>
                                 <div class="card-body">
-                                    <form action="" method="POST">
+                                    <form action="{{route('dashboard.admin_create')}}" method="POST">
                                         @csrf
                                         <div class="form-floating mb-3">
                                             <input class="form-control" id="inputName" name="name" type="text" placeholder="Admin full name" />
