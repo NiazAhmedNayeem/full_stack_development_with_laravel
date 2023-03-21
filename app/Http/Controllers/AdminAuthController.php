@@ -8,10 +8,10 @@ class AdminAuthController extends Controller
 {
     public function index()
     {
-        return view('admin.dashboard.user.index');
+        return view('admin.dashboard.admin.index');
     }
     public function manage()
     {
-        return view('admin.dashboard.user.manage');
+        return view('admin.dashboard.admin.manage');
     }
 }
