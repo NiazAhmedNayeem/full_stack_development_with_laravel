@@ -158,8 +158,8 @@
                     </a>
                     <div class="collapse" id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="layout-static.html">Add Admin</a>
-                            <a class="nav-link" href="layout-sidenav-light.html">Manage Admin</a>
+                            <a class="nav-link" href="{{route('dashboard.admin_add')}}">Add Admin</a>
+                            <a class="nav-link" href="{{route('dashboard.admin_manage')}}">Manage Admin</a>
                         </nav>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                    <div class="text-muted">&copy; 2023 All Rights Reserved | Niaz </div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;

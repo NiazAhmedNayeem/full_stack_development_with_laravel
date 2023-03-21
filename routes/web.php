@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebsiteController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AdminAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,11 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/footer', [DashboardController::class, 'footer'])->name('dashboard.footer');
     Route::get('/dashboard/footer/manage', [DashboardController::class, 'footer_manage'])->name('dashboard.footer_manage');
 
+
+
+
+    Route::get('/dashboard/admin/add', [AdminAuthController::class, 'index'])->name('dashboard.admin_add');
+    Route::get('/dashboard/admin/manage', [AdminAuthController::class, 'manage'])->name('dashboard.admin_manage');
 
 
 });
