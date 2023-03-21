@@ -69,4 +69,9 @@ class User extends Authenticatable
         self::$user->password   = bcrypt($request->password);
         self::$user->save();
     }
+    public static function adminDelete($id)
+    {
+        self::$user = User::find($id);
+        self::$user->delete();
+    }
 }

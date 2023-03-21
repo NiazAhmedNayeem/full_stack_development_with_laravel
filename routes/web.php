@@ -52,6 +52,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/admin/add', [AdminAuthController::class, 'index'])->name('dashboard.admin_add');
     Route::post('/dashboard/admin/create', [AdminAuthController::class, 'create'])->name('dashboard.admin_create');
     Route::get('/dashboard/admin/manage', [AdminAuthController::class, 'manage'])->name('dashboard.admin_manage');
+    Route::get('/dashboard/admin/manage/delete/{id}', [AdminAuthController::class, 'delete'])->name('dashboard.admin_manage_delete');
 
 
 });
