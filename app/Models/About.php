@@ -9,7 +9,7 @@ class About extends Model
 {
     use HasFactory;
 
-    private static $person, $image, $imageName, $imageUrl, $extension, $directory;
+    private static $person, $image, $imageName, $imageUrl, $extension, $directory, $message;
 
     public static function getImageUrl($request)
     {
@@ -35,4 +35,22 @@ class About extends Model
         self::$person->image    = self::getImageUrl($request);
         self::$person->save();
     }
+
+    public static function updateAboutStatus($id)
+    {
+        self::$person = About::find($id);
+        if (self::$person->status == 1 )
+        {
+            self::$person->status = 0;
+            self::$message = 'About status info unpublished successfully.';
+        }
+        else
+        {
+            self::$person->status = 1;
+            self::$message = 'About status info published successfully.';
+        }
+        self::$person->save();
+//        return self::$person;
+    }
 }
+

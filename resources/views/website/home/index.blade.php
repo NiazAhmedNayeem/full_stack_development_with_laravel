@@ -122,41 +122,42 @@
         <div class = "row-left">
             <img src = "{{'/'}}website/assets/my-photo.jpg" alt = "about photo">
         </div>
-
+    @foreach($abouts as $about)
         <div class = "row-right">
-            <h1 class = "text">B.Sc in Computer Science & Engineering (CSE) at State University of Bangladesh</h1>
+            <h1 class = "text">{{$about->about}}</h1>
             <div class = "about-content">
                 <ul>
                     <li class = "text">
                         <span>Name: </span>
-                        <span>Niaz Ahmed Nayeem</span>
+                        <span>{{$about->name}}</span>
                     </li>
                     <li class = "text">
                         <span>Date of Birth: </span>
-                        <span>January 01, 2000</span>
+                        <span>{{$about->dob}}</span>
                     </li>
                     <li class = "text">
                         <span>Address: </span>
-                        <span>Mohammadpur, Dhaka, Bangladesh</span>
+                        <span>{{$about->address}}</span>
                     </li>
                     <li class = "text">
                         <span>Email: </span>
-                        <span>developer.niaz@gmail.com</span>
+                        <span>{{$about->email}}</span>
                     </li>
                     <li class = "text">
                         <span>Zip code: </span>
-                        <span>1207</span>
+                        <span>{{$about->zip}}</span>
                     </li>
                     <li class = "text">
                         <span>Phone: </span>
-                        <span>+880 1966 509310</span>
+                        <span>{{$about->phone}}</span>
                     </li>
                 </ul>
             </div>
 
-            <h3>12 <span class="auto-type-3"></span></h3>
-            <a href="https://drive.google.com/file/d/1ggQDHqx9rp6jcS_2lbxBot_FcQ6kggHj/view?usp=sharing" target="blank"><button type = "button" class = "btn">download cv</button></a>
+            <h3>{{$about->project}} <span class="auto-type-3"></span></h3>
+            <a href="{{$about->url}}" target="blank"><button type = "button" class = "btn">download cv</button></a>
         </div>
+        @endforeach
     </div>
 </section>
 <!-- end of about page -->

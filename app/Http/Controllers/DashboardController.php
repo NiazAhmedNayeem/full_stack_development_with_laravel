@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use Illuminate\Session;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -12,37 +13,6 @@ class DashboardController extends Controller
         return view('admin.dashboard.index');
     }
 
-    public function home()
-    {
-        return view('admin.dashboard.home.index');
-    }
-    public function home_manage()
-    {
-        return view('admin.dashboard.home.manage');
-    }
-
-    public function about()
-    {
-        return view('admin.dashboard.about.index');
-    }
-    public function about_create(Request $request)
-    {
-        About::personAbout($request);
-        return redirect('/dashboard/about/manage')->with('message', 'Person about create successfully.');
-    }
-    public function about_manage()
-    {
-        return view('admin.dashboard.about.manage');
-    }
-
-    public function resume()
-    {
-        return view('admin.dashboard.resume.index');
-    }
-    public function resume_manage()
-    {
-        return view('admin.dashboard.resume.manage');
-    }
 
     public function services()
     {
