@@ -28,6 +28,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
     Route::get('/dashboard/about', [DashboardController::class, 'about'])->name('dashboard.about');
+    Route::post('/dashboard/about/create', [DashboardController::class, 'about_create'])->name('dashboard.about_create');
     Route::get('/dashboard/about/manage', [DashboardController::class, 'about_manage'])->name('dashboard.about_manage');
 
 

@@ -21,7 +21,11 @@ class DashboardController extends Controller
         return view('admin.dashboard.home.manage');
     }
 
-    public function about(Request $request)
+    public function about()
+    {
+        return view('admin.dashboard.about.index');
+    }
+    public function about_create(Request $request)
     {
         About::personAbout($request);
         return redirect('/dashboard/about/manage')->with('message', 'Person about create successfully.');
