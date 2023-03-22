@@ -79,7 +79,7 @@
                             </a>
                             <div class="collapse" id="pagesCollapseError1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.about')}}">Edit</a>
+                                    <a class="nav-link" href="{{route('dashboard.about')}}">Add</a>
                                     <a class="nav-link" href="{{route('dashboard.about_manage')}}">Manage</a>
                                 </nav>
                             </div>

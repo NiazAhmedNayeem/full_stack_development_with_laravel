@@ -11,7 +11,7 @@
                 <div class="card-body">
 
                     <h4 class="card-title">About Information</h4>
-                    <p class="card-title-desc">{{Session::get('message')}}</p>
+                    <p class="card-title-desc text-primary">{{Session::get('message')}}</p>
 
                     <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
@@ -50,7 +50,7 @@
                                     <a href="{{route('dashboard.about_edit', ['id' => $about->id])}}" class="btn btn-outline-primary">
                                         <i class="fa fa-book-dead"></i>
                                     </a>
-                                    <a href="" class="btn btn-outline-danger" >
+                                    <a href="{{route('dashboard.about_delete', ['id' => $about->id])}}" class="btn btn-outline-danger" >
                                         <i class="fa fa-trash"></i>
                                     </a>
                                 </td>
@@ -61,5 +61,5 @@
                 </div>
             </div>
         </div> <!-- end col -->
-    </div> <
+    </div>
 @endsection

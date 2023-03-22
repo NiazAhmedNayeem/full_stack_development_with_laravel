@@ -36,7 +36,7 @@ class About extends Model
         self::$person->save();
     }
 
-
+    //about update
     public static function aboutUpdate($request, $id)
     {
         self::$person = About::find($id);
@@ -65,15 +65,7 @@ class About extends Model
         self::$person->save();
     }
 
-
-
-
-
-
-
-
-
-
+    //status update
     public static function updateAboutStatus($id)
     {
         self::$person = About::find($id);
@@ -88,6 +80,17 @@ class About extends Model
             self::$message = 'About status info published successfully.';
         }
         self::$person->save();
+    }
+
+    //about delete
+    public static function aboutDelete($id)
+    {
+        self::$person = About::find($id);
+        if (file_exists(self::$person->image))
+        {
+            unlink(self::$person->image);
+        }
+        self::$person->delete();
     }
 }
 

@@ -33,4 +33,9 @@ class AboutController extends Controller
         About::aboutUpdate($request, $id);
         return redirect('/dashboard/about/manage')->with('message', 'About update successfully.');
     }
+    public function delete($id)
+    {
+        About::aboutDelete($id);
+        return redirect('/dashboard/about/manage')->with('message', 'About delete successfully.');
+    }
 }
