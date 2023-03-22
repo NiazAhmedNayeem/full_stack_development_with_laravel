@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -20,9 +21,10 @@ class DashboardController extends Controller
         return view('admin.dashboard.home.manage');
     }
 
-    public function about()
+    public function about(Request $request)
     {
-        return view('admin.dashboard.about.index');
+        About::personAbout($request);
+        return redirect('/dashboard/about/manage')->with('message', 'Person about create successfully.');
     }
     public function about_manage()
     {

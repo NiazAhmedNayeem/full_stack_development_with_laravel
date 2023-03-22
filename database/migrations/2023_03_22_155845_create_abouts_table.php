@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('project');
             $table->text('url');
             $table->text('image')->nullable();
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }

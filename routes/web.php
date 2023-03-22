@@ -25,8 +25,12 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/home', [DashboardController::class, 'home'])->name('dashboard.home');
     Route::get('/dashboard/home/manage', [DashboardController::class, 'home_manage'])->name('dashboard.home_manage');
 
+
+
     Route::get('/dashboard/about', [DashboardController::class, 'about'])->name('dashboard.about');
     Route::get('/dashboard/about/manage', [DashboardController::class, 'about_manage'])->name('dashboard.about_manage');
+
+
 
     Route::get('/dashboard/resume', [DashboardController::class, 'resume'])->name('dashboard.resume');
     Route::get('/dashboard/resume/manage', [DashboardController::class, 'resume_manage'])->name('dashboard.resume_manage');
