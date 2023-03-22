@@ -118,11 +118,12 @@
         </div>
     </div>
 
+    @foreach($abouts as $about)
     <div class = "row">
         <div class = "row-left">
-            <img src = "{{'/'}}website/assets/my-photo.jpg" alt = "about photo">
+            <img src = "{{$about->image}}" alt = "about photo">
         </div>
-    @foreach($abouts as $about)
+
         <div class = "row-right">
             <h1 class = "text">{{$about->about}}</h1>
             <div class = "about-content">

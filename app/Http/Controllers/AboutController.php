@@ -24,4 +24,13 @@ class AboutController extends Controller
     {
         return redirect('/dashboard/about/manage')->with('message', About::updateAboutStatus($id));
     }
+    public function edit($id)
+    {
+        return view('admin.dashboard.about.edit', ['about' => About::find($id)]);
+    }
+    public function update(Request $request, $id)
+    {
+        About::aboutUpdate($request, $id);
+        return redirect('/dashboard/about/manage')->with('message', 'About update successfully.');
+    }
 }

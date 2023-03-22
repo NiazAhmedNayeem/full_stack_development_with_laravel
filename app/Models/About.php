@@ -36,6 +36,44 @@ class About extends Model
         self::$person->save();
     }
 
+
+    public static function aboutUpdate($request, $id)
+    {
+        self::$person = About::find($id);
+        if ($request->file('image'))
+        {
+            if (file_exists(self::$person->image))
+            {
+                unlink(self::$person->image);
+            }
+            self::$imageUrl = self::getImageUrl($request);
+        }
+        else
+        {
+            self::$imageUrl = self::$person->image;
+        }
+        self::$person->about    = $request->about;
+        self::$person->name     = $request->name;
+        self::$person->dob      = $request->dob;
+        self::$person->address  = $request->address;
+        self::$person->email    = $request->email;
+        self::$person->zip      = $request->zip;
+        self::$person->phone    = $request->phone;
+        self::$person->project  = $request->project;
+        self::$person->url      = $request->url;
+        self::$person->image    = self::$imageUrl;
+        self::$person->save();
+    }
+
+
+
+
+
+
+
+
+
+
     public static function updateAboutStatus($id)
     {
         self::$person = About::find($id);
@@ -50,7 +88,6 @@ class About extends Model
             self::$message = 'About status info published successfully.';
         }
         self::$person->save();
-//        return self::$person;
     }
 }
 
