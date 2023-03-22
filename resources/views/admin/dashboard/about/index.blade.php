@@ -1,7 +1,7 @@
 @extends('admin.master')
 
 @section('title')
-
+    Create About
 @endsection
 
 @section('body')
@@ -59,7 +59,7 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Phone</label>
                             <div class="col-sm-9">
-                                <input type="number" class="form-control" placeholder="+880 19XX XXXXXX" id="horizontal-password-input" name="phone"/>
+                                <input type="number" class="form-control" placeholder="019XX XXXXXX" id="horizontal-password-input" name="phone"/>
                             </div>
                         </div>
 

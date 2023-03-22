@@ -1,7 +1,7 @@
 @extends('admin.master')
 
 @section('title')
-
+    Edit About
 @endsection
 
 @section('body')

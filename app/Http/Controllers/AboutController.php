@@ -20,6 +20,10 @@ class AboutController extends Controller
     {
         return view('admin.dashboard.about.manage', ['abouts' => About::orderBy('id', 'desc')->get()]);
     }
+    public function about_detail($id)
+    {
+        return view('admin.dashboard.about.detail', ['about' => About::find($id)]);
+    }
     public function updateStatus($id)
     {
         return redirect('/dashboard/about/manage')->with('message', About::updateAboutStatus($id));

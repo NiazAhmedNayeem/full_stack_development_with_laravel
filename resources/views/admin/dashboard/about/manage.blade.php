@@ -1,7 +1,7 @@
 @extends('admin.master')
 
 @section('title')
-
+    Manage About
 @endsection
 
 @section('body')
@@ -41,7 +41,7 @@
                                 <td><img src="{{asset($about->image)}}" alt="{{$about->name}}" height="50" width="70"/></td>
                                 <td>{{$about->status == 1 ? 'Published' : 'Unpublished'}}</td>
                                 <td>
-                                    <a href="" class="btn btn-outline-success">
+                                    <a href="{{route('dashboard.about_detail', ['id' => $about->id])}}" class="btn btn-outline-success">
                                         <i class="fa fa-book-open"></i>
                                     </a>
                                     <a href="{{route('dashboard.about-update-status', ['id' => $about->id])}}" class="btn btn-outline-info">

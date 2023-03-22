@@ -150,7 +150,7 @@
                     </li>
                     <li class = "text">
                         <span>Phone: </span>
-                        <span>{{$about->phone}}</span>
+                        <span>+88{{$about->phone}}</span>
                     </li>
                 </ul>
             </div>
