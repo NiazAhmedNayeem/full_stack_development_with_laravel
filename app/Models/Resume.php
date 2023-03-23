@@ -49,4 +49,9 @@ class Resume extends Model
         self::$person->save();
     }
 
+    public static function resumeDelete($id)
+    {
+        self::$person = Resume::find($id);
+        self::$person->delete();
+    }
 }

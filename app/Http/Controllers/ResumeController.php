@@ -47,4 +47,10 @@ class ResumeController extends Controller
     {
         return redirect('/dashboard/resume/manage')->with('message', Resume::updateResumeStatus($id));
     }
+    public function resume_delete($id)
+    {
+        Resume::resumeDelete($id);
+        return redirect('/dashboard/resume/manage')->with('message','Resume delete successfully.');
+    }
+
 }

@@ -175,47 +175,25 @@
         </div>
     </div>
 
-    <h1 class = "text">Hey, this is me, here is my resume describing my School, college, University, etc.</h1>
+        @foreach($resumes as $resume)
+
+            <h1 class = "text">{{$resume->res}}</h1>
+        @endforeach
+
 
     <div class = "row">
-
+        @foreach($resumes as $resume)
         <div class = "item">
             <div class = "icon">
                 <i class = "fas fa-graduation-cap"></i>
             </div>
-            <span>2018 - 2022</span>
-            <h2>computer engineering - <span>Software</span></h2>
-            <p class = "text">B.Sc in Computer Science & Engineering (CSE) at State University of Bangladesh</p>
+            <span>{{$resume->passyr}}</span>
+            <h2>{{$resume->department}} - <span>{{$resume->major}}</span></h2>
+            <p class = "text">{{$resume->institute}}</p>
         </div>
-
-        <div class = "item">
-            <div class = "icon">
-                <i class = "fas fa-graduation-cap"></i>
-            </div>
-            <span>2022</span>
-            <h2>Certification - <span>SEIP</span></h2>
-            <p class = "text">PHP with Laravel Framework</p>
-            <p class = "text">BASIS Institute of Technology & Management (BITM) </p>
-        </div>
-
-        <div class = "item">
-            <div class = "icon">
-                <i class = "fas fa-graduation-cap"></i>
-            </div>
-            <span>2018</span>
-            <h2>College - <span>HSC</span></h2>
-            <p class = "text">Shahzadpur Govt. College</p>
-        </div>
-
-        <div class = "item">
-            <div class = "icon">
-                <i class = "fas fa-graduation-cap"></i>
-            </div>
-            <span>2014</span>
-            <h2>high school - <span>SSC</span></h2>
-            <p class = "text">Shahzadpur Pilot Model High School</p>
-        </div>
+        @endforeach
     </div>
+
 </section>
 <!-- end of resume page -->
 
