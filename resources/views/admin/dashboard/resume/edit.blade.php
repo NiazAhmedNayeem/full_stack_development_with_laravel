@@ -11,7 +11,7 @@
                 <div class="card-body">
                     <h4 class="card-title mb-4">About create Form</h4>
                     <p class="text-center text-success">{{Session::get('message')}}</p>
-                    <form action="{{route('dashboard.resume-create', ['id' => $resume->id])}}" method="POST">
+                    <form action="{{route('dashboard.resume_update', ['id' => $resume->id])}}" method="POST">
                         @csrf
                         <div class="form-group row mb-4">
                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Please fill up the form</label>

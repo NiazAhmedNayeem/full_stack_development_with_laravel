@@ -33,6 +33,12 @@ class ResumeController extends Controller
     {
         return view('admin.dashboard.resume.edit', ['resume' => Resume::find($id)]);
     }
+
+    public function resume_update(Request $request, $id)
+    {
+        Resume::updateResume($request, $id);
+        return redirect('/dashboard/resume/manage')->with('message', 'Resume update successfully.');
+    }
     public function resume_detail($id)
     {
         return view('admin.dashboard.resume.detail', ['resume' => Resume::find($id)]);
