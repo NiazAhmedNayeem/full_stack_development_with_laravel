@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('resumes', function (Blueprint $table) {
             $table->id();
-            $table->text('res');
-            $table->text('passyr');
-            $table->text('department');
-            $table->text('major');
-            $table->text('institute');
+            $table->text('res')->nullable();
+            $table->text('passyr')->nullable();
+            $table->text('department')->nullable();
+            $table->text('major')->nullable();
+            $table->text('institute')->nullable();
             $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });

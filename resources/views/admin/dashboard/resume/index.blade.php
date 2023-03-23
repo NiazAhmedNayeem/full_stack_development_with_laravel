@@ -19,7 +19,7 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-email-input12" class="col-sm-3 col-form-label">Describe yourself</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control summernote" placeholder="Describe yourself" type="text" id="horizontal-email-input12" name="about"></textarea>
+                                <textarea class="form-control summernote" placeholder="Describe yourself" type="text" id="horizontal-email-input12" name="res"></textarea>
                             </div>
                         </div>
                         <div class="form-group row justify-content-end">

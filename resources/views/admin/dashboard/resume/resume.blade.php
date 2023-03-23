@@ -19,26 +19,26 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-email-input12" class="col-sm-3 col-form-label">Passing year or Present</label>
                             <div class="col-sm-9">
-                                <input class="form-control summernote" placeholder="2010-2014 or Present" type="text" id="horizontal-email-input12" name="about">
+                                <input class="form-control summernote" placeholder="2010-2014 or Present" type="text" id="horizontal-email-input12" name="passyr">
                             </div>
                         </div>
                         <div class="form-group row mb-4">
                             <label for="horizontal-email-input" class="col-sm-3 col-form-label">Department</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text" placeholder="Like BBA, CSE, LLB" id="horizontal-password-input" name="name"/>
+                                <input class="form-control" type="text" placeholder="Like BBA, CSE, LLB" id="horizontal-password-input" name="department"/>
                             </div>
                         </div>
 
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Major</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text" placeholder="Software" id="horizontal-password-input" name="dob"/>
+                                <input class="form-control" type="text" placeholder="Software" id="horizontal-password-input" name="major"/>
                             </div>
                         </div>
                         <div class="form-group row mb-4">
                             <label for="horizontal-email-input12" class="col-sm-3 col-form-label">Institute</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control summernote" placeholder="like University name" type="text" id="horizontal-email-input12" name="address"></textarea>
+                                <textarea class="form-control summernote" placeholder="like University name" type="text" id="horizontal-email-input12" name="institute"></textarea>
                             </div>
                         </div>
 

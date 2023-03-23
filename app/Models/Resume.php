@@ -21,4 +21,5 @@ class Resume extends Model
         self::$person->institute = $request->institute;
         self::$person->save();
     }
+
 }
