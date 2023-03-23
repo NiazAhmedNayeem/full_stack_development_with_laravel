@@ -43,5 +43,8 @@ class ResumeController extends Controller
     {
         return view('admin.dashboard.resume.detail', ['resume' => Resume::find($id)]);
     }
-
+    public function resumeStatus($id)
+    {
+        return redirect('/dashboard/resume/manage')->with('message', Resume::updateResumeStatus($id));
+    }
 }
