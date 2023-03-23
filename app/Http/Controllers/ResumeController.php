@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Resume;
 use Illuminate\Http\Request;
 
 class ResumeController extends Controller
@@ -10,17 +11,19 @@ class ResumeController extends Controller
     {
         return view('admin.dashboard.resume.index');
     }
-    public function index_resume_create()
+    public function index_resume_create(Request $request)
     {
-
+        Resume::personResume($request);
+        return redirect('/dashboard/resume/manage')->with('message', 'Resume detail create successfully');
     }
     public function resume()
     {
         return view('admin.dashboard.resume.resume');
     }
-    public function resume_create()
+    public function resume_create(Request $request)
     {
-
+        Resume::personResume($request);
+        return redirect('/dashboard/resume/manage')->with('message', 'Resume create successfully');
     }
     public function resume_manage()
     {
