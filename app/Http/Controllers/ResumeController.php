@@ -27,6 +27,6 @@ class ResumeController extends Controller
     }
     public function resume_manage()
     {
-        return view('admin.dashboard.resume.manage');
+        return view('admin.dashboard.resume.manage', ['resumes' => Resume::orderBy('id', 'desc')->get()]);
     }
 }
