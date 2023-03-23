@@ -10,6 +10,18 @@ class ResumeController extends Controller
     {
         return view('admin.dashboard.resume.index');
     }
+    public function index_resume_create()
+    {
+
+    }
+    public function resume()
+    {
+        return view('admin.dashboard.resume.resume');
+    }
+    public function resume_create()
+    {
+
+    }
     public function resume_manage()
     {
         return view('admin.dashboard.resume.manage');

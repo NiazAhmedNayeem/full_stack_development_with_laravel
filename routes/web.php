@@ -44,6 +44,9 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 //Resume section
     Route::get('/dashboard/resume', [ResumeController::class, 'index'])->name('dashboard.resume');
+    Route::post('/dashboard/resume/yourself', [ResumeController::class, 'index_resume_create'])->name('dashboard.resume-index');
+    Route::get('/dashboard/Add-resume', [ResumeController::class, 'resume'])->name('dashboard.resume.add');
+    Route::post('/dashboard/Create-resume', [ResumeController::class, 'resume_create'])->name('dashboard.resume-create');
     Route::get('/dashboard/resume/manage', [ResumeController::class, 'resume_manage'])->name('dashboard.resume_manage');
 
 

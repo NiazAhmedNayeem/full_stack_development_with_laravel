@@ -90,7 +90,8 @@
                             </a>
                             <div class="collapse" id="pagesCollapseError2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.resume')}}">Edit</a>
+                                    <a class="nav-link" href="{{route('dashboard.resume')}}">Add Resume Caption</a>
+                                    <a class="nav-link" href="{{route('dashboard.resume.add')}}">Add Resume</a>
                                     <a class="nav-link" href="{{route('dashboard.resume_manage')}}">Manage</a>
                                 </nav>
                             </div>
