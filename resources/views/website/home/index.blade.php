@@ -71,9 +71,11 @@
 <!-- home page -->
 <section class = "home container ">
     <div class = "row">
+        @foreach($homes as $home)
         <div class = "row-left">
             <h3>hello!</h3>
-            <h1>i'm <span>Niaz Ahmed</span></h1>
+
+            <h1>i'm <span>{{$home->name}}</span></h1>
             <!-- <h2> Software Engineer</h2> -->
             <h2><span class="auto-type-1"></span> </h2>
             <div class = "home-pg-btn">
@@ -88,20 +90,22 @@
                 </div>
 
                 <audio id="mySong">
-                    <source src="{{'/'}}website/media/song.mp3" type="audio/mp3">
+                    <source src="{{$home->audio}}" type="audio/mp3">
                 </audio>
 
                 <!-- -------------------------------------- -->
             </div>
+
         </div>
 
         <div class = "row-right">
             <div class = "img-border">
                 <div class = "img-container">
-                    <img src = "{{'/'}}website/assets/my-photo-home.jpg" alt = "my photo">
+                    <img src = "{{$home->image}}" alt = "my photo">
                 </div>
             </div>
         </div>
+        @endforeach
     </div>
 </section>
 <!-- end of home page -->
@@ -587,15 +591,18 @@
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 
 <!-- Setup and start animation! -->
+@foreach($homes as $home)
 <script>
+
     var typed = new Typed('.auto-type-1', {
-        strings: ['Software Engineer', 'A FREELANCE WEB DESIGNER and developer'],
+        strings: ['{{$home->title1}}', '{{$home->title2}}'],
         typeSpeed: 50,
         backSpeed: 20,
         loop: true
     });
-</script>
 
+</script>
+@endforeach
 
 <script>
     var typed = new Typed('.auto-type-3', {
