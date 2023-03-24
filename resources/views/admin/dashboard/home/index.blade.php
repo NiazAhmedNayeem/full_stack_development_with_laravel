@@ -46,7 +46,7 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input4" class="col-sm-3 col-form-label">Music</label>
                             <div class="col-sm-9">
-                                <input type="file" class="form-control-file" id="horizontal-password-input4" name="mp3"/>
+                                <input type="file" class="form-control-file" id="horizontal-password-input4" name="audio"/>
                             </div>
                         </div>
 

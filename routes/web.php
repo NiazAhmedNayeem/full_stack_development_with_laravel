@@ -28,7 +28,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 //home section
     Route::get('/dashboard/home', [HomeController::class, 'index'])->name('dashboard.home');
-    Route::get('/dashboard/home/create', [HomeController::class, 'create'])->name('dashboard.home-create');
+    Route::post('/dashboard/home/create', [HomeController::class, 'create'])->name('dashboard.home-create');
     Route::get('/dashboard/home/manage', [HomeController::class, 'home_manage'])->name('dashboard.home_manage');
 
 
