@@ -47,7 +47,7 @@
                                     <a href="{{route('dashboard.home_status', ['id' => $home->id])}}" class="btn btn-outline-info">
                                         <i class="fa fa-arrow-up"></i>
                                     </a>
-                                    <a href="" class="btn btn-outline-primary">
+                                    <a href="{{route('dashboard.home_edit', ['id' => $home->id])}}" class="btn btn-outline-primary">
                                         <i class="fa fa-book-dead"></i>
                                     </a>
                                     <a href="" class="btn btn-outline-danger" >

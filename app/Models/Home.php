@@ -44,6 +44,13 @@ class Home extends Model
         self::$person->save();
     }
 
+    public static function homeUpdate($request, $id)
+    {
+
+    }
+
+
+
     public static function statusUpdate($id)
     {
         self::$person = Home::find($id);

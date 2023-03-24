@@ -29,4 +29,12 @@ class HomeController extends Controller
     {
         return redirect('/dashboard/home/manage')->with('message', Home::statusUpdate($id));
     }
+    public function home_edit($id)
+    {
+        return view('admin.dashboard.home.edit', ['home' => Home::find($id)]);
+    }
+    public function home_update(Request $request, $id)
+    {
+
+    }
 }
