@@ -19,6 +19,6 @@ class HomeController extends Controller
     }
     public function home_manage()
     {
-        return view('admin.dashboard.home.manage');
+        return view('admin.dashboard.home.manage', ['homes' => Home::orderBy('id', 'desc')->get()]);
     }
 }
