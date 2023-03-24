@@ -43,4 +43,20 @@ class Home extends Model
         self::$person->audio = self::getAudioUrl($request);
         self::$person->save();
     }
+
+    public static function statusUpdate($id)
+    {
+        self::$person = Home::find($id);
+        if (self::$person->status == 1)
+        {
+            self::$person->status = 0;
+            self::$message = 'Home status info unpublished successfully.';
+        }
+        else
+        {
+            self::$person->status = 1;
+            self::$message = 'Home status info published successfully.';
+        }
+        self::$person->save();
+    }
 }
