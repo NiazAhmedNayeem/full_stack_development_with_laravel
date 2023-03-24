@@ -34,6 +34,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/home/manage/edit/{id}', [HomeController::class, 'home_edit'])->name('dashboard.home_edit');
     Route::post('/dashboard/home/manage/update/{id}', [HomeController::class, 'home_update'])->name('dashboard.home_update');
     Route::get('/dashboard/home/manage/update-status/{id}', [HomeController::class, 'home_status'])->name('dashboard.home_status');
+    Route::get('/dashboard/home/manage/delete/{id}', [HomeController::class, 'home_delete'])->name('dashboard.home_delete');
 
 
 //About section

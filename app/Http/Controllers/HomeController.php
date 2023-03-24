@@ -38,4 +38,9 @@ class HomeController extends Controller
         Home::homeUpdate($request, $id);
         return redirect('/dashboard/home/manage')->with('message', 'Home update successfully.');
     }
+    public function home_delete($id)
+    {
+        Home::personDelete($id);
+        return redirect('/dashboard/home/manage')->with('message', 'Home delete successfully.');
+    }
 }

@@ -80,8 +80,6 @@ class Home extends Model
         self::$person->save();
     }
 
-
-
     public static function statusUpdate($id)
     {
         self::$person = Home::find($id);
@@ -96,5 +94,19 @@ class Home extends Model
             self::$message = 'Home status info published successfully.';
         }
         self::$person->save();
+    }
+
+    public static function personDelete($id)
+    {
+        self::$person = Home::find($id);
+        if (file_exists(self::$person->image))
+        {
+            unlink(self::$person->image);
+        }
+        if (file_exists(self::$person->audio))
+        {
+            unlink(self::$person->audio);
+        }
+        self::$person->delete();
     }
 }
