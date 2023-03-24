@@ -35,6 +35,7 @@ class HomeController extends Controller
     }
     public function home_update(Request $request, $id)
     {
-
+        Home::homeUpdate($request, $id);
+        return redirect('/dashboard/home/manage')->with('message', 'Home update successfully.');
     }
 }

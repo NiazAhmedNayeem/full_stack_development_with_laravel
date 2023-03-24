@@ -46,7 +46,38 @@ class Home extends Model
 
     public static function homeUpdate($request, $id)
     {
+        self::$person = Home::find($id);
+        if ($request->file('image'))
+        {
+            if (file_exists(self::$person->image))
+            {
+                unlink(self::$person->image);
+            }
+            self::$imageUrl = self::getImageUrl($request);
+        }
+        else
+        {
+            self::$imageUrl = self::$person->image;
+        }
 
+        if ($request->file('audio'))
+        {
+            if (file_exists(self::$person->audio))
+            {
+                unlink(self::$person->audio);
+            }
+            self::$audioUrl = self::getAudioUrl($request);
+        }
+        else
+        {
+            self::$audioUrl = self::$person->audio;
+        }
+        self::$person->name = $request->name;
+        self::$person->title1 = $request->title1;
+        self::$person->title2 = $request->title2;
+        self::$person->image = self::$imageUrl;
+        self::$person->audio = self::$audioUrl;
+        self::$person->save();
     }
 
 
