@@ -41,6 +41,20 @@
                             <td><img src="{{asset($home->image)}}" alt="" height="200" width="220"/></td>
                         </tr>
                     </table>
+
+                    <div>
+
+                        <a href="{{route('dashboard.home_status', ['id' => $home->id])}}" class="btn btn-outline-info">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                        <a href="{{route('dashboard.home_edit', ['id' => $home->id])}}" class="btn btn-outline-primary">
+                            <i class="fa fa-book-dead"></i>
+                        </a>
+                        <a href="{{route('dashboard.home_delete', ['id' => $home->id])}}" class="btn btn-outline-danger" >
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div> <!-- end col -->
