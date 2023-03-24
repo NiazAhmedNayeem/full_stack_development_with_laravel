@@ -17,12 +17,6 @@
                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Please fill up the form</label>
                         </div>
                         <div class="form-group row mb-4">
-                            <label for="horizontal-email-input12" class="col-sm-3 col-form-label">Describe Resume (Optional)</label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control summernote" placeholder="Describe yourself" type="text" id="horizontal-email-input12" name="res">{{$resume->res}}</textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row mb-4">
                             <label for="horizontal-email-input12" class="col-sm-3 col-form-label">Passing year or Present</label>
                             <div class="col-sm-9">
                                 <input class="form-control summernote" value="{{$resume->passyr}}" placeholder="2010-2014 or Present" type="text" id="horizontal-email-input12" name="passyr">

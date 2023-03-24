@@ -7,15 +7,16 @@ use Illuminate\Http\Request;
 
 class ResumeController extends Controller
 {
-    public function index()
-    {
-        return view('admin.dashboard.resume.index');
-    }
-    public function index_resume_create(Request $request)
-    {
-        Resume::personResume($request);
-        return redirect('/dashboard/resume/manage')->with('message', 'Resume detail create successfully');
-    }
+//    public function index()
+//    {
+//        return view('admin.dashboard.resume.index');
+//    }
+//    public function index_resume_create(Request $request)
+//    {
+//        Resume::personResume($request);
+//        return redirect('/dashboard/resume/manage')->with('message', 'Resume detail create successfully');
+//    }
+
     public function resume()
     {
         return view('admin.dashboard.resume.resume');

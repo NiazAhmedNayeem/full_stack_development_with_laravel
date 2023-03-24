@@ -9,7 +9,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-4">About create Form</h4>
+                    <h4 class="card-title mb-4">Resume create Form</h4>
                     <p class="text-center text-success">{{Session::get('message')}}</p>
                     <form action="{{route('dashboard.resume-create')}}" method="POST" enctype="multipart/form-data">
                         @csrf

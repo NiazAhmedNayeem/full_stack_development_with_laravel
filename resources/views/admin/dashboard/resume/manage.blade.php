@@ -10,14 +10,13 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h4 class="card-title">About Information</h4>
+                    <h4 class="card-title">Resume Information</h4>
                     <p class="card-title-desc text-primary">{{Session::get('message')}}</p>
 
                     <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
                             <th>SL NO</th>
-                            <th>Resume Description</th>
                             <th>Passing Year or Present</th>
                             <th>Department</th>
                             <th>Major</th>
@@ -30,7 +29,6 @@
                         @foreach($resumes as $resume)
                             <tr class="{{$resume->status == 1 ? '' : 'bg-warning'}}">
                                 <td>{{$loop->iteration}}</td>
-                                <td>{{$resume->res}}</td>
                                 <td>{{$resume->passyr}}</td>
                                 <td>{{$resume->department}}</td>
                                 <td>{{$resume->major}}</td>

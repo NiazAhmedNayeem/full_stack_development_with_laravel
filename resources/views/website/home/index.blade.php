@@ -175,11 +175,7 @@
         </div>
     </div>
 
-        @foreach($resumes as $resume)
-
-            <h1 class = "text">{{$resume->res}}</h1>
-        @endforeach
-
+            <h1 class = "text">Hey, this is me, here is my resume describing my School, college, University, etc.</h1>
 
     <div class = "row">
         @foreach($resumes as $resume)
