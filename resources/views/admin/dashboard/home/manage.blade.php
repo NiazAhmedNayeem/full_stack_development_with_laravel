@@ -41,7 +41,7 @@
                                 </td>
                                 <td>{{$home->status == 1 ? 'Published' : 'Unpublished'}}</td>
                                 <td>
-                                    <a href="" class="btn btn-outline-success">
+                                    <a href="{{route('dashboard.home_detail', ['id' => $home->id])}}" class="btn btn-outline-success">
                                         <i class="fa fa-book-open"></i>
                                     </a>
                                     <a href="" class="btn btn-outline-info">
