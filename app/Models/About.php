@@ -92,5 +92,5 @@ class About extends Model
         }
         self::$person->delete();
     }
-}
 
+}
