@@ -51,7 +51,7 @@
 
                                     <td>{{$footer->status == 1 ? 'Published' : 'Unpublished'}}</td>
                                     <td>
-                                        <a href="" class="btn btn-outline-success">
+                                        <a href="{{route('dashboard.footer_detail', ['id' => $footer->id])}}" class="btn btn-outline-success">
                                             <i class="fa fa-book-open"></i>
                                         </a>
                                         <a href="" class="btn btn-outline-info">

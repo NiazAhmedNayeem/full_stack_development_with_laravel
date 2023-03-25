@@ -20,4 +20,9 @@ class FooterController extends Controller
     {
         return view('admin.dashboard.footer.manage', ['footers' => Footer::orderBy('id', 'desc')->get()]);
     }
+    public function footer_detail($id)
+    {
+        return view('admin.dashboard.footer.detail', ['footer' => Footer::find($id)]);
+    }
+
 }
