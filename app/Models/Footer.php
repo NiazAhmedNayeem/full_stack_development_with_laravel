@@ -25,5 +25,6 @@ class Footer extends Model
         self::$person->instagram = $request->instagram;
         self::$person->github = $request->github;
         self::$person->copyright = $request->copyright;
+        self::$person->save();
     }
 }
