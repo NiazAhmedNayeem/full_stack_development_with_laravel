@@ -19,20 +19,20 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-email-input12" class="col-sm-3 col-form-label">Contact Caption</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control summernote" placeholder="Describe contact" type="text" id="horizontal-email-input12" name="about"></textarea>
+                                <textarea class="form-control summernote" placeholder="Describe contact" type="text" id="horizontal-email-input12" name="caption"></textarea>
                             </div>
                         </div>
                         <div class="form-group row mb-4">
                             <label for="horizontal-email-input" class="col-sm-3 col-form-label">Title</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text" placeholder="Feel Free to ask me" id="horizontal-password-input" name="name"/>
+                                <input class="form-control" type="text" placeholder="Feel Free to ask me" id="horizontal-password-input" name="title"/>
                             </div>
                         </div>
 
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Title Detail</label>
                             <div class="col-sm-9">
-                                <input class="form-control" type="text" placeholder="Describe Title" id="horizontal-password-input" name="dob"/>
+                                <input class="form-control" type="text" placeholder="Describe Title" id="horizontal-password-input" name="title_detail"/>
                             </div>
                         </div>
 
@@ -54,21 +54,21 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Facebook URL (https://)</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.facebook.com/'" id="horizontal-password-input" name="url"/>
+                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.facebook.com/'" id="horizontal-password-input" name="facebook"/>
                             </div>
                         </div>
 
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Twitter URL (https://)</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.twitter.com/'" id="horizontal-password-input" name="url"/>
+                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.twitter.com/'" id="horizontal-password-input" name="twitter"/>
                             </div>
                         </div>
 
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Instagram URL (https://)</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.instagram.com/'" id="horizontal-password-input" name="url"/>
+                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.instagram.com/'" id="horizontal-password-input" name="instagram"/>
                             </div>
                         </div>
 
