@@ -33,5 +33,9 @@ class FooterController extends Controller
         Footer::updateFooter($request, $id);
         return redirect('/dashboard/footer/manage')->with('message', 'Footer update successfully.');
     }
-
+    public function footer_status($id)
+    {
+        Footer::footerStatus($id);
+        return redirect('/dashboard/footer/manage')->with('message', 'Status update successfully.');
+    }
 }

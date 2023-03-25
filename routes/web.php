@@ -98,6 +98,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/footer/manage/detail/{id}', [FooterController::class, 'footer_detail'])->name('dashboard.footer_detail');
     Route::get('/dashboard/footer/manage/edit/{id}', [FooterController::class, 'footer_edit'])->name('dashboard.footer_edit');
     Route::post('/dashboard/footer/manage/update/{id}', [FooterController::class, 'footer_update'])->name('dashboard.footer_update');
+    Route::get('/dashboard/footer/manage/status/{id}', [FooterController::class, 'footer_status'])->name('dashboard.footer_status');
 
 
 

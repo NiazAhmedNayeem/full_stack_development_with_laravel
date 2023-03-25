@@ -43,4 +43,19 @@ class Footer extends Model
         self::$person->copyright = $request->copyright;
         self::$person->save();
     }
+    public static function footerStatus($id)
+    {
+        self::$person = Footer::find($id);
+        if (self::$person->status == 1)
+        {
+            self::$person->status = 0;
+            self::$message = '';
+        }
+        else
+        {
+            self::$person->status = 1;
+            self::$message = '';
+        }
+        self::$person->save();
+    }
 }

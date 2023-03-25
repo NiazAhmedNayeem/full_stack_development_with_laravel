@@ -54,7 +54,7 @@
                                         <a href="{{route('dashboard.footer_detail', ['id' => $footer->id])}}" class="btn btn-outline-success">
                                             <i class="fa fa-book-open"></i>
                                         </a>
-                                        <a href="" class="btn btn-outline-info">
+                                        <a href="{{route('dashboard.footer_status', ['id' => $footer->id])}}" class="btn btn-outline-info">
                                             <i class="fa fa-arrow-up"></i>
                                         </a>
                                         <a href="{{route('dashboard.footer_edit', ['id' => $footer->id])}}" class="btn btn-outline-primary">
