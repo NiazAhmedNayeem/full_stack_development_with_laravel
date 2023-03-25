@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\ContactController;
 
 
 /*
@@ -79,8 +80,9 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 //Contact section
-    Route::get('/dashboard/contact', [DashboardController::class, 'contact'])->name('dashboard.contact');
-    Route::get('/dashboard/contact/manage', [DashboardController::class, 'contact_manage'])->name('dashboard.contact_manage');
+    Route::get('/dashboard/contact', [ContactController::class, 'index'])->name('dashboard.contact');
+    Route::post('/dashboard/contact/create', [ContactController::class, 'contact_create'])->name('dashboard.contact_create');
+    Route::get('/dashboard/contact/manage', [ContactController::class, 'contact_manage'])->name('dashboard.contact_manage');
 
 
 //Footer section

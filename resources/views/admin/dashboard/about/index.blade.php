@@ -59,7 +59,7 @@
                         <div class="form-group row mb-4">
                             <label for="horizontal-password-input" class="col-sm-3 col-form-label">Phone</label>
                             <div class="col-sm-9">
-                                <input type="number" class="form-control" placeholder="019XX XXXXXX" id="horizontal-password-input" name="phone"/>
+                                <input type="number" class="form-control" placeholder="019XXXXXXXX" id="horizontal-password-input" name="phone"/>
                             </div>
                         </div>
 
@@ -71,9 +71,9 @@
                         </div>
 
                         <div class="form-group row mb-4">
-                            <label for="horizontal-password-input" class="col-sm-3 col-form-label">CV link / URL</label>
+                            <label for="horizontal-password-input" class="col-sm-3 col-form-label">CV link / URL (https://)</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" placeholder="www.line.com" id="horizontal-password-input" name="url"/>
+                                <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.google.com/'" id="horizontal-password-input" name="url"/>
                             </div>
                         </div>
 

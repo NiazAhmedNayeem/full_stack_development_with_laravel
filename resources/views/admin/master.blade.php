@@ -134,7 +134,7 @@
                             </a>
                             <div class="collapse" id="pagesCollapseError6" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.contact')}}">Edit</a>
+                                    <a class="nav-link" href="{{route('dashboard.contact')}}">Add</a>
                                     <a class="nav-link" href="{{route('dashboard.contact_manage')}}">Manage</a>
                                 </nav>
                             </div>

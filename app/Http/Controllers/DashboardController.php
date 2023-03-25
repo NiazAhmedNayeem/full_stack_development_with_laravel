@@ -41,14 +41,7 @@ class DashboardController extends Controller
         return view('admin.dashboard.project.manage');
     }
 
-    public function contact()
-    {
-        return view('admin.dashboard.contact.index');
-    }
-    public function contact_manage()
-    {
-        return view('admin.dashboard.contact.manage');
-    }
+
 
     public function footer()
     {
