@@ -83,7 +83,7 @@
                             <div class="form-group row mb-4">
                                 <label for="horizontal-password-input" class="col-sm-3 col-form-label">Github URL (https://)</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.github.com/'" id="horizontal-password-input" name="instagram"/>
+                                    <input type="text" class="form-control" placeholder="URL must be this formate 'https://www.github.com/'" id="horizontal-password-input" name="copyright"/>
                                 </div>
                             </div>
 

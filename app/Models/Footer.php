@@ -23,7 +23,7 @@ class Footer extends Model
         self::$person->facebook = $request->facebook;
         self::$person->twitter = $request->twitter;
         self::$person->instagram = $request->instagram;
-        self::$person->instagram = $request->instagram;
+        self::$person->github = $request->github;
         self::$person->copyright = $request->copyright;
     }
 }

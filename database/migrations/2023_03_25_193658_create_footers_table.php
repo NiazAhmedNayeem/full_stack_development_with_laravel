@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('footers', function (Blueprint $table) {
             $table->id();
+            $table->text('about');
+            $table->text('address');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('website');
+            $table->string('website_link');
+            $table->string('facebook');
+            $table->string('twitter');
+            $table->string('instagram');
+            $table->string('github');
+            $table->text('copyright');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }
