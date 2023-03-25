@@ -396,19 +396,19 @@
             <h2 style="color:#72B626">get in touch</h2>
         </div>
     </div>
-
-    <h1 class = "text">Ready to innovate? Grow? Discover your business potential. We invite you to get in touch - we look forward to hearing from you and answering your questions.</h1>
+@foreach($contacts as $contact)
+    <h1 class = "text">{{$contact->caption}}</h1>
 
     <div class = "row">
         <div class = "col-left">
-            <h2>feel free to ask us!</h2>
-            <p class = "text">Fill in the form then one of our consultants will get back to you as soon as possible.</p>
+            <h2>{{$contact->title}}</h2>
+            <p class = "text">{{$contact->title_detail}}</p>
 
             <div class = "contact-info">
                 <span><i class = "fas fa-envelope-open"></i></span>
                 <h3>
                     <span class = "text">mail me</span> <br>
-                    developer.niaz@gmail.com
+                    {{$contact->email}}
                 </h3>
             </div>
 
@@ -416,23 +416,23 @@
                 <span><i class = "fas fa-phone-square-alt"></i></span>
                 <h3>
                     <span class = "text">call me</span> <br>
-                    +880 1966 509310
+                    +88{{$contact->phone}}
                 </h3>
             </div>
 
             <div class = "contact-social-links">
-                <a href = "https://www.facebook.com/NiazAhmedNayeem/" target="blank">
+                <a href = "{{$contact->facebook}}" target="blank">
                     <i class = "fab fa-facebook-f"></i>
                 </a>
-                <a href = "https://twitter.com/NiazAhmedNayeem" target="blank">
+                <a href = "{{$contact->twitter}}" target="blank">
                     <i class = "fab fa-twitter"></i>
                 </a>
-                <a href = "https://github.com/NiazAhmedNayeem" target="blank">
-                    <i class = "fab fa-github"></i>
+                <a href = "{{$contact->instagram}}" target="blank">
+                    <i class = "fab fa-instagram"></i>
                 </a>
             </div>
         </div>
-
+        @endforeach
         <div class = "col-right">
 
             <form class = "contact-form" action="login.php" method="POST">
