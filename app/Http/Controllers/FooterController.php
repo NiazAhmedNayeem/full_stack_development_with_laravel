@@ -28,5 +28,10 @@ class FooterController extends Controller
     {
         return view('admin.dashboard.footer.edit', ['footer' => Footer::find($id)]);
     }
+    public function footer_update(Request $request, $id)
+    {
+        Footer::updateFooter($request, $id);
+        return redirect('/dashboard/footer/manage')->with('message', 'Footer update successfully.');
+    }
 
 }

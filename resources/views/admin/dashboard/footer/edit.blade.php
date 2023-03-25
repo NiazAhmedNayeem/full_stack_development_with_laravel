@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Footer Edit Form</h4>
                         <p class="text-center text-success">{{Session::get('message')}}</p>
-                        <form action="" method="POST">
+                        <form action="{{route('dashboard.footer_update', ['id' => $footer->id])}}" method="POST">
                             @csrf
                             <div class="form-group row mb-4">
                                 <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Please fill up the form</label>

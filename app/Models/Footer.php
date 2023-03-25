@@ -27,4 +27,20 @@ class Footer extends Model
         self::$person->copyright = $request->copyright;
         self::$person->save();
     }
+    public static function updateFooter($request, $id)
+    {
+        self::$person = Footer::find($id);
+        self::$person->about = $request->about;
+        self::$person->address = $request->address;
+        self::$person->email = $request->email;
+        self::$person->phone = $request->phone;
+        self::$person->website = $request->website;
+        self::$person->website_link = $request->website_link;
+        self::$person->facebook = $request->facebook;
+        self::$person->twitter = $request->twitter;
+        self::$person->instagram = $request->instagram;
+        self::$person->github = $request->github;
+        self::$person->copyright = $request->copyright;
+        self::$person->save();
+    }
 }
