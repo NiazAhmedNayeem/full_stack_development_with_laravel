@@ -38,4 +38,9 @@ class FooterController extends Controller
         Footer::footerStatus($id);
         return redirect('/dashboard/footer/manage')->with('message', 'Status update successfully.');
     }
+    public function footer_delete($id)
+    {
+        Footer::footerDelete($id);
+        return redirect('/dashboard/footer/manage')->with('message', 'Footer delete successfully.');
+    }
 }

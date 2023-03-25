@@ -60,7 +60,7 @@
                                         <a href="{{route('dashboard.footer_edit', ['id' => $footer->id])}}" class="btn btn-outline-primary">
                                             <i class="fa fa-book-dead"></i>
                                         </a>
-                                        <a href="" class="btn btn-outline-danger" >
+                                        <a href="{{route('dashboard.footer_delete', ['id' => $footer->id])}}" class="btn btn-outline-danger" >
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </td>

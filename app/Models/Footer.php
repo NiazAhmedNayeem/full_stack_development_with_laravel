@@ -49,13 +49,18 @@ class Footer extends Model
         if (self::$person->status == 1)
         {
             self::$person->status = 0;
-            self::$message = '';
+            self::$message = 'Home status info unpublished successfully';
         }
         else
         {
             self::$person->status = 1;
-            self::$message = '';
+            self::$message = 'Home status info published successfully.';
         }
         self::$person->save();
+    }
+    public static function footerDelete($id)
+    {
+        self::$person = Footer::find($id);
+        self::$person->delete();
     }
 }
