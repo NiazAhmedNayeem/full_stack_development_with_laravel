@@ -83,6 +83,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/contact', [ContactController::class, 'index'])->name('dashboard.contact');
     Route::post('/dashboard/contact/create', [ContactController::class, 'contact_create'])->name('dashboard.contact_create');
     Route::get('/dashboard/contact/manage', [ContactController::class, 'contact_manage'])->name('dashboard.contact_manage');
+    Route::get('/dashboard/contact/manage/detail', [ContactController::class, 'contact_detail'])->name('dashboard.contact_detail');
 
 
 //Footer section

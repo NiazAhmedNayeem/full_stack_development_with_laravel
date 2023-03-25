@@ -18,6 +18,6 @@ class ContactController extends Controller
     }
     public function contact_manage()
     {
-        return view('admin.dashboard.contact.manage');
+        return view('admin.dashboard.contact.manage', ['contacts' => Contact::orderBy('id', 'desc')->get()]);
     }
 }
