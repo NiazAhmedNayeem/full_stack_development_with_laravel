@@ -24,6 +24,15 @@ class ContactController extends Controller
     {
         return view('admin.dashboard.contact.detail', ['contact' => Contact::find($id)]);
     }
+    public function contact_edit($id)
+    {
+        return view('admin.dashboard.contact.edit', ['contact' => Contact::find($id)]);
+    }
+    public function contact_update(Request $request, $id)
+    {
+        Contact::personUpdate($request, $id);
+        return redirect('/dashboard/contact/manage')->with('message', 'Contact update successfully.');
+    }
     public function contact_status($id)
     {
         return redirect('/dashboard/contact/manage')->with('message', Contact::contactStatus($id));

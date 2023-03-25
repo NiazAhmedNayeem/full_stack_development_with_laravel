@@ -25,6 +25,20 @@ class Contact extends Model
         self::$person->save();
     }
 
+    public static function personUpdate($request, $id)
+    {
+        self::$person = Contact::find($id);
+        self::$person->caption = $request->caption;
+        self::$person->title = $request->title;
+        self::$person->title_detail = $request->title_detail;
+        self::$person->email = $request->email;
+        self::$person->phone = $request->phone;
+        self::$person->facebook = $request->facebook;
+        self::$person->twitter = $request->twitter;
+        self::$person->instagram = $request->instagram;
+        self::$person->save();
+    }
+
     public static function contactStatus($id)
     {
         self::$person = Contact::find($id);

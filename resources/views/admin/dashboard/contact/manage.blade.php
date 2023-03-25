@@ -51,7 +51,7 @@
                                         <a href="{{route('dashboard.contact_status', ['id' => $contact->id])}}" class="btn btn-outline-info">
                                             <i class="fa fa-arrow-up"></i>
                                         </a>
-                                        <a href="" class="btn btn-outline-primary">
+                                        <a href="{{route('dashboard.contact_edit', ['id' => $contact->id])}}" class="btn btn-outline-primary">
                                             <i class="fa fa-book-dead"></i>
                                         </a>
                                         <a href="{{route('dashboard.contact_delete', ['id' => $contact->id])}}" class="btn btn-outline-danger" >

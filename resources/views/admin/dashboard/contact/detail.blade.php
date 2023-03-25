@@ -50,7 +50,17 @@
                                 <td>{{$contact->status == 1 ? 'Published' : 'Not Available'}}</td>
                             </tr>
                         </table>
-
+                        <div>
+                            <a href="{{route('dashboard.contact_status', ['id' => $contact->id])}}" class="btn btn-outline-info">
+                                <i class="fa fa-arrow-up"></i>
+                            </a>
+                            <a href="{{route('dashboard.contact_edit', ['id' => $contact->id])}}" class="btn btn-outline-primary">
+                                <i class="fa fa-book-dead"></i>
+                            </a>
+                            <a href="{{route('dashboard.contact_delete', ['id' => $contact->id])}}" class="btn btn-outline-danger" >
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
