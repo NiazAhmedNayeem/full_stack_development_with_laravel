@@ -96,6 +96,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::post('/dashboard/footer/create', [FooterController::class, 'footer_create'])->name('dashboard.footer-create');
     Route::get('/dashboard/footer/manage', [FooterController::class, 'footer_manage'])->name('dashboard.footer_manage');
     Route::get('/dashboard/footer/manage/detail/{id}', [FooterController::class, 'footer_detail'])->name('dashboard.footer_detail');
+    Route::get('/dashboard/footer/manage/edit/{id}', [FooterController::class, 'footer_edit'])->name('dashboard.footer_edit');
 
 
 

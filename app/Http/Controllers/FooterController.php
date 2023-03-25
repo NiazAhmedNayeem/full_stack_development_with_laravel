@@ -24,5 +24,9 @@ class FooterController extends Controller
     {
         return view('admin.dashboard.footer.detail', ['footer' => Footer::find($id)]);
     }
+    public function footer_edit($id)
+    {
+        return view('admin.dashboard.footer.edit', ['footer' => Footer::find($id)]);
+    }
 
 }
