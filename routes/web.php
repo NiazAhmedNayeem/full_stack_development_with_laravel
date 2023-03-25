@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FooterController;
 
 
 /*
@@ -39,7 +40,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 //About section
-    Route::get('/dashboard/about', [AboutController::class, 'index'])->name('dashboard.about');
+    Route::get('/dashboard/add-about', [AboutController::class, 'index'])->name('dashboard.about');
     Route::post('/dashboard/about/create', [AboutController::class, 'about_create'])->name('dashboard.about_create');
     Route::get('/dashboard/about/manage', [AboutController::class, 'about_manage'])->name('dashboard.about_manage');
     Route::get('/dashboard/about/manage/detail/{id}', [AboutController::class, 'about_detail'])->name('dashboard.about_detail');
@@ -53,7 +54,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 //    Route::get('/dashboard/resume', [ResumeController::class, 'index'])->name('dashboard.resume');
 //    Route::post('/dashboard/resume/yourself', [ResumeController::class, 'index_resume_create'])->name('dashboard.resume-index');
 
-    Route::get('/dashboard/Add-resume', [ResumeController::class, 'resume'])->name('dashboard.resume.add');
+    Route::get('/dashboard/add-resume', [ResumeController::class, 'resume'])->name('dashboard.resume.add');
     Route::post('/dashboard/Create-resume', [ResumeController::class, 'resume_create'])->name('dashboard.resume-create');
     Route::get('/dashboard/resume/manage', [ResumeController::class, 'resume_manage'])->name('dashboard.resume_manage');
     Route::get('/dashboard/resume/manage/edit/{id}', [ResumeController::class, 'resume_edit'])->name('dashboard.resume_edit');
@@ -80,7 +81,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 //Contact section
-    Route::get('/dashboard/contact', [ContactController::class, 'index'])->name('dashboard.contact');
+    Route::get('/dashboard/add-contact', [ContactController::class, 'index'])->name('dashboard.contact');
     Route::post('/dashboard/contact/create', [ContactController::class, 'contact_create'])->name('dashboard.contact_create');
     Route::get('/dashboard/contact/manage', [ContactController::class, 'contact_manage'])->name('dashboard.contact_manage');
     Route::get('/dashboard/contact/manage/detail/{id}', [ContactController::class, 'contact_detail'])->name('dashboard.contact_detail');
@@ -91,8 +92,8 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 //Footer section
-    Route::get('/dashboard/footer', [DashboardController::class, 'footer'])->name('dashboard.footer');
-    Route::get('/dashboard/footer/manage', [DashboardController::class, 'footer_manage'])->name('dashboard.footer_manage');
+    Route::get('/dashboard/footer', [FooterController::class, 'index'])->name('dashboard.footer');
+    Route::get('/dashboard/footer/manage', [FooterController::class, 'footer_manage'])->name('dashboard.footer_manage');
 
 
 

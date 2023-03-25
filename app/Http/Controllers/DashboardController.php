@@ -43,13 +43,6 @@ class DashboardController extends Controller
 
 
 
-    public function footer()
-    {
-        return view('admin.dashboard.footer.index');
-    }
-    public function footer_manage()
-    {
-        return view('admin.dashboard.footer.manage');
-    }
+
 
 }
