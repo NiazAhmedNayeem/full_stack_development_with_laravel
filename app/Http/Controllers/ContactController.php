@@ -28,4 +28,10 @@ class ContactController extends Controller
     {
         return redirect('/dashboard/contact/manage')->with('message', Contact::contactStatus($id));
     }
+    public function contact_delete($id)
+    {
+        Contact::contactDelete($id);
+        return redirect('/dashboard/contact/manage')->with('message', 'Contact delete successfully.');
+    }
+
 }

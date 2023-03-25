@@ -40,4 +40,11 @@ class Contact extends Model
         }
         self::$person->save();
     }
+
+    public static function contactDelete($id)
+    {
+        self::$person = Contact::find($id);
+        self::$person->delete();
+    }
+
 }
