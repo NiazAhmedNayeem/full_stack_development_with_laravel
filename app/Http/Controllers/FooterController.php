@@ -18,6 +18,6 @@ class FooterController extends Controller
     }
     public function footer_manage()
     {
-        return view('admin.dashboard.footer.manage');
+        return view('admin.dashboard.footer.manage', ['footers' => Footer::orderBy('id', 'desc')->get()]);
     }
 }

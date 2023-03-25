@@ -14,7 +14,7 @@ class Footer extends Model
     public static function createFooter($request)
     {
         self::$person = new Footer();
-        self::$person->anout = $request->about;
+        self::$person->about = $request->about;
         self::$person->address = $request->address;
         self::$person->email = $request->email;
         self::$person->phone = $request->phone;
