@@ -20,4 +20,8 @@ class ContactController extends Controller
     {
         return view('admin.dashboard.contact.manage', ['contacts' => Contact::orderBy('id', 'desc')->get()]);
     }
+    public function contact_detail($id)
+    {
+        return view('admin.dashboard.contact.detail', ['contact' => Contact::find($id)]);
+    }
 }
