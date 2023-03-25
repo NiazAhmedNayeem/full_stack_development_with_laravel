@@ -24,4 +24,8 @@ class ContactController extends Controller
     {
         return view('admin.dashboard.contact.detail', ['contact' => Contact::find($id)]);
     }
+    public function contact_status($id)
+    {
+        return redirect('/dashboard/contact/manage')->with('message', Contact::contactStatus($id));
+    }
 }

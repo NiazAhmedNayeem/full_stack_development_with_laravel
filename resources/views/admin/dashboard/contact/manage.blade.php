@@ -48,7 +48,7 @@
                                         <a href="{{route('dashboard.contact_detail', ['id' => $contact->id])}}" class="btn btn-outline-success">
                                             <i class="fa fa-book-open"></i>
                                         </a>
-                                        <a href="" class="btn btn-outline-info">
+                                        <a href="{{route('dashboard.contact_status', ['id' => $contact->id])}}" class="btn btn-outline-info">
                                             <i class="fa fa-arrow-up"></i>
                                         </a>
                                         <a href="" class="btn btn-outline-primary">

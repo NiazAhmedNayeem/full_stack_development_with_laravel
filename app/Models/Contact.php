@@ -24,4 +24,20 @@ class Contact extends Model
         self::$person->instagram = $request->instagram;
         self::$person->save();
     }
+
+    public static function contactStatus($id)
+    {
+        self::$person = Contact::find($id);
+        if (self::$person->status == 1)
+        {
+            self::$person->status = 0;
+            self::$message = 'Home status info unpublished successfully.';
+        }
+        else
+        {
+            self::$person->status = 1;
+            self::$message = 'Home status info published successfully.';
+        }
+        self::$person->save();
+    }
 }
