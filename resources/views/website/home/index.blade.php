@@ -489,15 +489,16 @@
 <!-- footer -->
 <footer class = "footer container">
     <div class = "row">
+        @foreach($footers as $footer)
         <div class = "col">
             <!-- <img src="assets/logo.png" style="height: 70px; width: 150px; text-align: center;"/> -->
             <h3 class = "footer-title" style="color:#72B626">about</h3>
-            <p class = "text" style="text-align: justify;">I'm Niaz Ahmed Nayeem, a website designer, and developer, I do professional work, with dedication and effort. If you want to make any kind of website contact with me. Thank you.</p>
+            <p class = "text" style="text-align: justify;">{{$footer->about}}</p>
             <div class = "social-links">
-                <a href = "https://www.github.com/NiazAhmedNayeem/" target="blank"><i class = "fab fa-github"></i></a>
-                <a href = "https://twitter.com/NiazAhmedNayeem" target="blank"><i class = "fab fa-twitter"></i></a>
-                <a href = "https://www.facebook.com/NiazAhmedNayeem/" target="blank"><i class = "fab fa-facebook"></i></a>
-                <a href = "https://www.instagram.com/niazahmednayeem/" target="blank"><i class = "fab fa-instagram"></i></a>
+                <a href = "{{$footer->github}}" target="blank"><i class = "fab fa-github"></i></a>
+                <a href = "{{$footer->twitter}}" target="blank"><i class = "fab fa-twitter"></i></a>
+                <a href = "{{$footer->facebook}}" target="blank"><i class = "fab fa-facebook"></i></a>
+                <a href = "{{$footer->instagram}}" target="blank"><i class = "fab fa-instagram"></i></a>
             </div>
         </div>
 
@@ -551,36 +552,37 @@
             <span>
               <i class = "fas fa-map-marker-alt"></i>
             </span>
-                <span class = "text">Mohammadpur, Dhaka, Bangladesh</span>
+                <span class = "text">{{$footer->address}}</span>
             </div>
 
             <div>
             <span>
               <i class = "fas fa-phone"></i>
             </span>
-                <span class = "text">+880 1966 509310</span>
+                <span class = "text">{{$footer->phone}}</span>
             </div>
 
             <div>
             <span>
               <i class = "fas fa-envelope"></i>
             </span>
-                <span class = "text">developer.niaz@gmail.com</span>
+                <span class = "text">{{$footer->email}}</span>
             </div>
 
             <div>
             <span>
               <i class = "fas fa-globe-asia"></i>
             </span>
-                <a href="https://niazahmednayeem.github.io/portfolio/" target="blank"> <span class = "text">niazahmednayeem.github.io/portfolio</span></a>
+                <a href="{{$footer->website_link}}" target="blank"> <span class = "text">{{$footer->website}}</span></a>
             </div>
 
         </div>
     </div>
 
     <div class = "footer-text">
-        <p class = "text" style="color:#72B626">&copy; 2023 All Rights Reserved | Niaz </p>
+        <p class = "text" style="color:#72B626">&copy; {{$footer->copyright}} </p>
     </div>
+    @endforeach
 </footer>
 <!-- end of footer -->
 
