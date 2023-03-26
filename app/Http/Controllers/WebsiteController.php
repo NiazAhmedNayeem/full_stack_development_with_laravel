@@ -9,9 +9,12 @@ use App\Models\Footer;
 use App\Models\Home;
 use App\Models\Resume;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class WebsiteController extends Controller
 {
+    public $emailData = [];
+
     public function index()
     {
         return view('website.home.index', ['abouts' => About::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
@@ -24,6 +27,15 @@ class WebsiteController extends Controller
 
     public function feedback(Request $request)
     {
+        $this->emailData = [
+            'name'    => $request->name,
+            'email'   => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ];
+        $send_mail = 'niazahmed.net@gmail.com';
+        Mail::to($send_mail)->send(new $this->emailData);
+
         Feedback::userFeedback($request);
         return redirect('/#contact')->with('message', 'Your message send successfully, we will reply to you as soon as possible, Thank you.');
     }

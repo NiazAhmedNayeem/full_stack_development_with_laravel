@@ -11,14 +11,16 @@ use Illuminate\Queue\SerializesModels;
 
 class FeedbackMail extends Mailable
 {
+    public $value;
+
     use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->value = $data;
     }
 
     /**
@@ -27,7 +29,7 @@ class FeedbackMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Feedback Mail',
+            subject: 'Portfolio Feedback',
         );
     }
 
