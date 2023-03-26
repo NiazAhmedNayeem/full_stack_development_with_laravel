@@ -145,7 +145,7 @@
                             </a>
                             <div class="collapse" id="pagesCollapseError7" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.footer')}}">Edit</a>
+                                    <a class="nav-link" href="{{route('dashboard.footer')}}">Add</a>
                                     <a class="nav-link" href="{{route('dashboard.footer_manage')}}">Manage</a>
                                 </nav>
                             </div>
@@ -161,6 +161,19 @@
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="{{route('dashboard.admin_add')}}">Create Admin</a>
                             <a class="nav-link" href="{{route('dashboard.admin_manage')}}">Manage Admin</a>
+                        </nav>
+                    </div>
+
+
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts1">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Feedback From User
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="#"> Admin</a>
+                            <a class="nav-link" href="#">Manage Admin</a>
                         </nav>
                     </div>
                 </div>

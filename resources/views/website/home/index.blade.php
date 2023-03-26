@@ -435,7 +435,7 @@
         @endforeach
         <div class = "col-right">
 
-            <form class = "contact-form" action="login.php" method="POST">
+            <form class = "contact-form" action="" method="POST">
 
                 <div class = "form-group">
                     <input type = "text" placeholder="your name" id="name" name="name">
@@ -559,7 +559,7 @@
             <span>
               <i class = "fas fa-phone"></i>
             </span>
-                <span class = "text">{{$footer->phone}}</span>
+                <span class = "text">+88{{$footer->phone}}</span>
             </div>
 
             <div>
@@ -639,13 +639,13 @@
 
     updateVisitCount();
 
-    function updateVisitCount(){
-        fetch('https://api.countapi.xyz/update/niazahmednayeem.github.io/portfolio/?amount=1')
-            .then(res => res.json())
-            .then(res => {
-                countEl.innerHTML = res.value;
-            });
-    }
+    // function updateVisitCount(){
+    //     fetch('https://api.countapi.xyz/update/niazahmednayeem.github.io/portfolio/?amount=1')
+    //         .then(res => res.json())
+    //         .then(res => {
+    //             countEl.innerHTML = res.value;
+    //         });
+    // }
 </script>
 
 </body>
