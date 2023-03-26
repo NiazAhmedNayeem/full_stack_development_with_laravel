@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\Contact;
+use App\Models\Feedback;
 use App\Models\Footer;
 use App\Models\Home;
 use App\Models\Resume;
@@ -19,5 +20,11 @@ class WebsiteController extends Controller
                                                 'contacts' => Contact::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
                                                 'footers' => Footer::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
             ]);
+    }
+
+    public function feedback(Request $request)
+    {
+        Feedback::userFeedback($request);
+        return redirect('/#contact')->with('message', 'Message send successfully, Thank yoy.');
     }
 }
