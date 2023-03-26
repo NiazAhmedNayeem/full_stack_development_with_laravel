@@ -23,9 +23,16 @@
     <h4>Name: {{ $value['name'] }}</h4>
     <p>Email: {{ $value['email'] }}</p>
     <p>Subject: {{ $value['subject'] }}</p>
-    <p>Message: {{ $value['message'] }}</p>
-    <hr/>
+    <p style="text-align: justify">Message: {{ $value['message'] }}</p>
+    <br/>
+    <br/>
+    <br/>
     <p>Thank you..</p>
+    <br>
+    <br>
+    <hr/>
+    <p>&copy; 2023 All Rights Reserved | Niaz </p>
+
 </div>
 </body>
 </html>

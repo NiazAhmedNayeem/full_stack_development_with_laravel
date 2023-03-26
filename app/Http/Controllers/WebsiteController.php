@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FeedbackMail;
 use App\Models\About;
 use App\Models\Contact;
 use App\Models\Feedback;
@@ -27,14 +28,16 @@ class WebsiteController extends Controller
 
     public function feedback(Request $request)
     {
+        //-------Feedback Mail-----------///
         $this->emailData = [
             'name'    => $request->name,
             'email'   => $request->email,
             'subject' => $request->subject,
             'message' => $request->message,
         ];
-        $send_mail = 'niazahmed.net@gmail.com';
-        Mail::to($send_mail)->send(new $this->emailData);
+        $send_mail = "niazahmed.net@gmail.com";
+        Mail::to($send_mail)->send(new FeedbackMail($this->emailData));
+        //-------Feedback Mail-----------///
 
         Feedback::userFeedback($request);
         return redirect('/#contact')->with('message', 'Your message send successfully, we will reply to you as soon as possible, Thank you.');
