@@ -172,7 +172,7 @@
                     </a>
                     <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="#"> Admin</a>
+                            <a class="nav-link" href="{{route('dashboard.user_feedback')}}">User Feedback</a>
                             <a class="nav-link" href="#">Manage Admin</a>
                         </nav>
                     </div>

@@ -434,9 +434,9 @@
         </div>
         @endforeach
         <div class = "col-right">
-
-            <form class = "contact-form" action="" method="POST">
-
+            <p class="text-center" style="color: chartreuse">{{Session::get('message')}}</p>
+            <form class = "contact-form" action="{{route('user_feedback')}}" method="POST">
+            @csrf
                 <div class = "form-group">
                     <input type = "text" placeholder="your name" id="name" name="name">
                     <input type = "email" placeholder="your email" id="email" name="email">

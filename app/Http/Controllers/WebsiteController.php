@@ -25,6 +25,6 @@ class WebsiteController extends Controller
     public function feedback(Request $request)
     {
         Feedback::userFeedback($request);
-        return redirect('/#contact')->with('message', 'Message send successfully, Thank yoy.');
+        return redirect('/#contact')->with('message', 'Your message send successfully, we will reply to you as soon as possible, Thank you.');
     }
 }

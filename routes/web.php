@@ -9,6 +9,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FooterController;
+use App\Http\Controllers\FeedbackController;
 
 
 /*
@@ -94,6 +95,10 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::post('/dashboard/contact/manage/contact-update/{id}', [ContactController::class, 'contact_update'])->name('dashboard.contact_update');
     Route::get('/dashboard/contact/manage/contact-status/{id}', [ContactController::class, 'contact_status'])->name('dashboard.contact_status');
     Route::get('/dashboard/contact/manage/contact-delete/{id}', [ContactController::class, 'contact_delete'])->name('dashboard.contact_delete');
+
+
+//Feedback section
+    Route::get('/dashboard/user-feedback', [FeedbackController::class, 'user_feedback'])->name('dashboard.user_feedback');
 
 
 //Footer section
