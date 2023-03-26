@@ -20,4 +20,9 @@ class Feedback extends Model
         self::$person->message = $request->message;
         self::$person->save();
     }
+    public static function feedbackDelete($id)
+    {
+        self::$person = Feedback::find($id);
+        self::$person->delete();
+    }
 }

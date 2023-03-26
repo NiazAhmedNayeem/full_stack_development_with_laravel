@@ -98,7 +98,9 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 //Feedback section
-    Route::get('/dashboard/user-feedback', [FeedbackController::class, 'user_feedback'])->name('dashboard.user_feedback');
+    Route::get('/user-feedback', [FeedbackController::class, 'manage_feedback'])->name('feedback-manage');
+    Route::get('/user-feedback-detail/{id}', [FeedbackController::class, 'feedback_detail'])->name('feedback-detail');
+    Route::get('/user-feedback-delete/{id}', [FeedbackController::class, 'feedback_delete'])->name('feedback-delete');
 
 
 //Footer section
