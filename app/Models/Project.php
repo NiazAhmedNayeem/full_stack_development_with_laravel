@@ -33,4 +33,21 @@ class Project extends Model
         self::$person->image        = self::getImageUrl($request);
         self::$person->save();
     }
+
+    public static function updateProjectStatus($id)
+    {
+        self::$person = Project::find($id);
+        if (self::$person->status == 1 )
+        {
+            self::$person->status = 0;
+            self::$message = 'About status info unpublished successfully.';
+        }
+        else
+        {
+            self::$person->status = 1;
+            self::$message = 'About status info published successfully.';
+        }
+        self::$person->save();
+        return self::$message;
+    }
 }

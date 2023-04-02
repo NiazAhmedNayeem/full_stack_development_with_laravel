@@ -80,6 +80,7 @@ class About extends Model
             self::$message = 'About status info published successfully.';
         }
         self::$person->save();
+        return self::$message;
     }
 
     //about delete

@@ -86,6 +86,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/project', [ProjectController::class, 'index'])->name('dashboard.project');
     Route::post('/dashboard/create-project', [ProjectController::class, 'create_project'])->name('dashboard.project_create');
     Route::get('/dashboard/project/manage', [ProjectController::class, 'project_manage'])->name('dashboard.project_manage');
+    Route::get('/dashboard/project-status/{id}', [ProjectController::class, 'project_status'])->name('dashboard.project_status');
 
 
 //Contact section
