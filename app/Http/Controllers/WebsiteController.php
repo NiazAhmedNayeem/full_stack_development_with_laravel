@@ -24,7 +24,7 @@ class WebsiteController extends Controller
                                                 'homes' => Home::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
                                                 'contacts' => Contact::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
                                                 'footers' => Footer::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
-                                                'projects' => Project::where('status', 1)->orderBy('id', 'desc')->take(3)->get(),
+                                                'projects' => Project::where('status', 1)->orderBy('id', 'desc')->take(10)->get(),
             ]);
     }
 

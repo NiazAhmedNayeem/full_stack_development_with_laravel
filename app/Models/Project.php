@@ -40,12 +40,12 @@ class Project extends Model
         if (self::$person->status == 1 )
         {
             self::$person->status = 0;
-            self::$message = 'About status info unpublished successfully.';
+            self::$message = 'Project status info unpublished successfully.';
         }
         else
         {
             self::$person->status = 1;
-            self::$message = 'About status info published successfully.';
+            self::$message = 'Project status info published successfully.';
         }
         self::$person->save();
         return self::$message;

@@ -353,41 +353,6 @@
             </a>
         </div>
         @endforeach
-
-        <div class = "item">
-            <div class = "item-overlay">
-                <a href = "#">branding & illustration design</a>
-                <h3>web design</h3>
-            </div>
-        </div>
-
-        <div class = "item">
-            <div class = "item-overlay">
-                <a href = "#">branding & illustration design</a>
-                <h3>web design</h3>
-            </div>
-        </div>
-
-        <div class = "item">
-            <div class = "item-overlay">
-                <a href = "#">branding & illustration design</a>
-                <h3>web design</h3>
-            </div>
-        </div>
-
-        <div class = "item">
-            <div class = "item-overlay">
-                <a href = "#">branding & illustration design</a>
-                <h3>web design</h3>
-            </div>
-        </div>
-
-        <div class = "item">
-            <div class = "item-overlay">
-                <a href = "#">branding & illustration design</a>
-                <h3>web design</h3>
-            </div>
-        </div>
     </div>
 </section>
 <!-- end of projects page -->
