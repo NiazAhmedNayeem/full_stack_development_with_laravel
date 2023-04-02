@@ -342,8 +342,9 @@
     <div class = "row">
         <div class = "item">
             <div class = "item-overlay">
-                <a href = "#">branding & illustration design</a>
+                <a href = "#">Online Training Management System</a>
                 <h3>web design</h3>
+                <a href="#" class="btn btn-danger"></a>
             </div>
         </div>
 

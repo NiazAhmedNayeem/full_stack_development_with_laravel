@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FooterController;
 use App\Http\Controllers\FeedbackController;
@@ -82,8 +83,9 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
 //Project section
-    Route::get('/dashboard/project', [DashboardController::class, 'project'])->name('dashboard.project');
-    Route::get('/dashboard/project/manage', [DashboardController::class, 'project_manage'])->name('dashboard.project_manage');
+    Route::get('/dashboard/project', [ProjectController::class, 'index'])->name('dashboard.project');
+    Route::post('/dashboard/project', [ProjectController::class, 'create_project'])->name('dashboard.project_create');
+    Route::get('/dashboard/project/manage', [ProjectController::class, 'project_manage'])->name('dashboard.project_manage');
 
 
 //Contact section

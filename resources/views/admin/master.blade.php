@@ -123,8 +123,8 @@
                             </a>
                             <div class="collapse" id="pagesCollapseError5" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.project')}}">Edit</a>
-                                    <a class="nav-link" href="{{route('dashboard.project_manage')}}">Manage</a>
+                                    <a class="nav-link" href="{{route('dashboard.project')}}">Add Project</a>
+                                    <a class="nav-link" href="{{route('dashboard.project_manage')}}">Manage Project</a>
                                 </nav>
                             </div>
 
@@ -172,8 +172,7 @@
                     </a>
                     <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
-                            <a class="nav-link" href="{{route('feedback-manage')}}">User Feedback</a>
-                            <a class="nav-link" href="#">Manage Admin</a>
+                            <a class="nav-link" href="{{route('feedback-manage')}}">Manage Feedback</a>
                         </nav>
                     </div>
                 </div>

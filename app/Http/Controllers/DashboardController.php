@@ -32,14 +32,7 @@ class DashboardController extends Controller
         return view('admin.dashboard.skill.manage');
     }
 
-    public function project()
-    {
-        return view('admin.dashboard.project.index');
-    }
-    public function project_manage()
-    {
-        return view('admin.dashboard.project.manage');
-    }
+
 
 
 

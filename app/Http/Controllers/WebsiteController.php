@@ -26,6 +26,9 @@ class WebsiteController extends Controller
             ]);
     }
 
+
+
+
     public function feedback(Request $request)
     {
         //-------Feedback Mail-----------///

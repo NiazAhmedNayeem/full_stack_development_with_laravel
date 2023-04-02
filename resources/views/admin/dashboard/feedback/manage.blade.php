@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-body">
 
-                        <h4 class="card-title">Footer Information</h4>
+                        <h4 class="card-title">User Feedback Information</h4>
                         <p class="card-title-desc text-primary">{{Session::get('message')}}</p>
 
                         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
