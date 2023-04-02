@@ -47,6 +47,7 @@ class Resume extends Model
             self::$message = 'About status info published successfully.';
         }
         self::$person->save();
+        return self::$message;
     }
 
     public static function resumeDelete($id)

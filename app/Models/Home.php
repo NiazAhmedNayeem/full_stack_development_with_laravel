@@ -94,6 +94,7 @@ class Home extends Model
             self::$message = 'Home status info published successfully.';
         }
         self::$person->save();
+        return self::$message;
     }
 
     public static function personDelete($id)
