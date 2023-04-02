@@ -8,6 +8,7 @@ use App\Models\Contact;
 use App\Models\Feedback;
 use App\Models\Footer;
 use App\Models\Home;
+use App\Models\Project;
 use App\Models\Resume;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -23,6 +24,7 @@ class WebsiteController extends Controller
                                                 'homes' => Home::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
                                                 'contacts' => Contact::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
                                                 'footers' => Footer::where('status', 1)->orderBy('id', 'desc')->take(1)->get(),
+                                                'projects' => Project::where('status', 1)->orderBy('id', 'desc')->take(3)->get(),
             ]);
     }
 

@@ -340,13 +340,19 @@
     </div>
 
     <div class = "row">
+        @foreach($projects as $project)
         <div class = "item">
-            <div class = "item-overlay">
-                <a href = "#">Online Training Management System</a>
-                <h3>web design</h3>
-                <a href="#" class="btn btn-danger"></a>
-            </div>
+            <img src="{{$project->image}}" height="319">
+            <a href = "{{$project->url}}" target="_blank">
+                <div class = "item-overlay">
+                    <h1>{{$project->name}}</h1>
+                    <p>{{$project->language1}} || {{$project->language2}}</p>
+                    <p>{{$project->language3}} || {{$project->language4}}</p>
+                    <p>{{$project->language5}}</p>
+                </div>
+            </a>
         </div>
+        @endforeach
 
         <div class = "item">
             <div class = "item-overlay">
