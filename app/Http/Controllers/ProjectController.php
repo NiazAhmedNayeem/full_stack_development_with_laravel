@@ -18,6 +18,6 @@ class ProjectController extends Controller
     }
     public function project_manage()
     {
-        return view('admin.dashboard.project.manage');
+        return view('admin.dashboard.project.manage', ['projects' => Project::orderBy('id', 'desc')->get()]);
     }
 }
