@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('language1');
-            $table->string('language2');
-            $table->string('language3');
-            $table->string('language4');
-            $table->string('language4');
+            $table->string('language1')->nullable();
+            $table->string('language2')->nullable();
+            $table->string('language3')->nullable();
+            $table->string('language4')->nullable();
+            $table->string('language5')->nullable();
             $table->string('url');
             $table->text('image')->nullable();
             $table->tinyInteger('status')->default(0);

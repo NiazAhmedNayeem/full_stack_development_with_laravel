@@ -16,7 +16,7 @@ class Project extends Model
         self::$image= $request->file('image');
         self::$extension = self::$image->getClientOriginalExtension();
         self::$imageName = time().'.'.self::$extension;
-        self::$directory = 'about_image/';
+        self::$directory = 'project_image/';
         self::$image->move(self::$directory, self::$imageName);
         return self::$directory.self::$imageName;
     }
