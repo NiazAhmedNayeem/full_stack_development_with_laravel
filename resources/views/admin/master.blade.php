@@ -55,102 +55,142 @@
                     </a>
                     <div class="sb-sidenav-menu-heading">Interface</div>
 
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                        Website
+{{--                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">--}}
+{{--                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>--}}
+{{--                        Website--}}
+{{--                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                    </a>--}}
+{{--                    <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">--}}
+{{--                        <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">--}}
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">--}}
+{{--                                Home--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.home')}}">Add</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.home_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError1" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                About--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.about')}}">Add</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.about_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError2" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                Resume--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.resume.add')}}">Add</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.resume_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError3" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                Services--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.services')}}">Edit</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.services_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError4" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                Skill--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.skill')}}">Edit</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.skill_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError5" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                Project--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError5" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.project')}}">Add Project</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.project_manage')}}">Manage Project</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError6" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                Contact--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError6" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.contact')}}">Add</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.contact_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+
+{{--                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError7" aria-expanded="false" aria-controls="pagesCollapseError">--}}
+{{--                                Footer--}}
+{{--                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
+{{--                            </a>--}}
+{{--                            <div class="collapse" id="pagesCollapseError7" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">--}}
+{{--                                <nav class="sb-sidenav-menu-nested nav">--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.footer')}}">Add</a>--}}
+{{--                                    <a class="nav-link" href="{{route('dashboard.footer_manage')}}">Manage</a>--}}
+{{--                                </nav>--}}
+{{--                            </div>--}}
+{{--                        </nav>--}}
+{{--                    </div>--}}
+
+
+
+
+
+
+
+
+
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts1">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Website Module
                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                        <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                Home
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.home')}}">Add</a>
-                                    <a class="nav-link" href="{{route('dashboard.home_manage')}}">Manage</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError1" aria-expanded="false" aria-controls="pagesCollapseError">
-                                About
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.about')}}">Add</a>
-                                    <a class="nav-link" href="{{route('dashboard.about_manage')}}">Manage</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError2" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Resume
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.resume.add')}}">Add</a>
-                                    <a class="nav-link" href="{{route('dashboard.resume_manage')}}">Manage</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError3" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Services
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.services')}}">Edit</a>
-                                    <a class="nav-link" href="{{route('dashboard.services_manage')}}">Manage</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError4" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Skill
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.skill')}}">Edit</a>
-                                    <a class="nav-link" href="{{route('dashboard.skill_manage')}}">Manage</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError5" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Project
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError5" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.project')}}">Add Project</a>
-                                    <a class="nav-link" href="{{route('dashboard.project_manage')}}">Manage Project</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError6" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Contact
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError6" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.contact')}}">Add</a>
-                                    <a class="nav-link" href="{{route('dashboard.contact_manage')}}">Manage</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError7" aria-expanded="false" aria-controls="pagesCollapseError">
-                                Footer
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapseError7" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('dashboard.footer')}}">Add</a>
-                                    <a class="nav-link" href="{{route('dashboard.footer_manage')}}">Manage</a>
-                                </nav>
-                            </div>
+                    <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="{{route('dashboard.home_manage')}}">Home</a>
+                            <a class="nav-link" href="{{route('dashboard.about_manage')}}">About</a>
+                            <a class="nav-link" href="{{route('dashboard.resume_manage')}}">Resume</a>
+                            <a class="nav-link" href="{{route('dashboard.services_manage')}}">Services</a>
+                            <a class="nav-link" href="{{route('dashboard.skill_manage')}}">Skill</a>
+                            <a class="nav-link" href="{{route('dashboard.project_manage')}}">Project</a>
+                            <a class="nav-link" href="{{route('dashboard.contact_manage')}}">Contact</a>
+                            <a class="nav-link" href="{{route('dashboard.footer_manage')}}">Footer</a>
                         </nav>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts1" aria-expanded="false" aria-controls="collapseLayouts1">
                         <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -176,10 +216,6 @@
                         </nav>
                     </div>
                 </div>
-            </div>
-            <div class="sb-sidenav-footer">
-                <div class="small">Logged in as:</div>
-                Start Bootstrap
             </div>
         </nav>
     </div>

@@ -12,6 +12,9 @@
                     <div class="card-body">
 
                         <h4 class="card-title">Home Information</h4>
+                        <div class="text-right">
+                            <a href="{{route('dashboard.home')}}" class="btn btn-primary w-md float-right"> + Add Home</a>
+                        </div>
                         <p class="card-title-desc text-primary">{{Session::get('message')}}</p>
 
                         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
